@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <main class="main-container">
+    <section class="background-purple">
+      <div class="card-front">
+        <img class="card-logo" src="images/card-logo.svg" alt="logo">
+        <p class="card-numbers">0000 0000 0000 0000</p>
+        <div class="card-details">
+          <p class="card-name">Jane Appleseed</p>
+          <p><span class="card-month">00</span>/<span class="card-year">00</span></p>
+        </div>
+      </div>
+
+      <div class="card-back">
+        <p class="number-cvc">000</p>
+      </div>
+        
+    </section>
+
+    <section class="form-section">
+      <form class="form" action="">
+        <label class="form-label" for="cardholder">Cardholder Name</label>
+        <input class="form-input" type="text" name="cardholder" id="cardholder" placeholder="e.g. Jane Appleseed" maxlength="25">
+        <div class="cardholder-error error"></div>
+
+        <label class="form-label" for="cardNumber">Card Number</label>
+        <input class="form-input" type="text" name="cardNumber" id="cardNumber" maxLength="19" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="cardNumber-error error"></div>
+      
+
+        <div class="form-date-cvc"><!-- grid -->
+          <!-- 1-->
+          <label class="form-label" for="card-month">Exp. Date (MM/YY)</label>
+          <!-- 2-->
+          <label class="form-label" for="cardCVC">CVC</label>
+          <!-- 3-->
+          <div class="container-label-month-year">
+            <input class="form-input" type="text" name="cardMonth" id="cardMonth" maxlength="2" placeholder="MM">
+            <input class="form-input" type="text" name="cardYear" id="cardYear" maxlength="2" placeholder="YY">
+          </div>
+          <!-- 4-->
+          <input class="form-input" type="text" name="CardCVC" id="CardCVC" maxlength="3" placeholder="e.g. 123">
+          <!-- 5-->
+          <div class="form-errors-container">
+            <div class="month-error error" ></div>
+            <div class="year-error error"></div>
+          </div>
+          <!-- 6-->
+          <div class="cvc-error error"></div>
+        </div>
+        <input class="button-submit" type="submit" value="Confirm">
+      </form>
+    </section>
+    <section class="thanks">
+      <img class="thanks-img" src="images/icon-complete.svg" alt="icon complete">
+      <h1 class="thanks-title">THANK YOU!</h1>
+      <p class="thanks-text">We've added your card details</p>
+      <button class="thanks-button">Continue</button>
+    </section>
+  </main>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" target="_blank">Johan Gonzalez</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@use '_variables';
+@use 'backgroundpurple';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+.main-container{
+    border:1px solid red;
+    width: 375px;
+    margin:auto; 
+    @media(min-width:1320px){
+        width: 1300px;
+        display: flex;
+    }
+}
