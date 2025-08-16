@@ -53,7 +53,7 @@
   .background-purple {
     background-image: url("/images/bg-main-desktop.png");
     width: 435px;
-    height: 810px;
+    height: 100%;
   }
   .background-purple .card-front {
     height: 220px;
@@ -112,13 +112,13 @@
   width: 100%;
   height: 44px;
   border-radius: 8px;
-  border: 0.5px solid hsl(270deg, 3%, 87%);
+  border: 0.5px solid hsl(270, 3%, 87%);
   margin: 9px 0 20px;
   padding-left: 15px;
   outline: none;
 }
 .form-section .form-input::placeholder {
-  color: hsl(270deg, 3%, 87%);
+  color: hsl(270, 3%, 87%);
   font-family: "Space Grotesk", sans-serif;
   font-size: 17px;
 }
@@ -138,7 +138,7 @@
   font-size: 17px;
   font-family: "Space Grotesk", sans-serif;
   color: white;
-  background-color: hsl(278deg, 68%, 11%);
+  background-color: hsl(278, 68%, 11%);
   border: none;
   margin-top: 10px;
   cursor: pointer;
@@ -152,7 +152,7 @@
 }
 
 .error {
-  color: hsl(0deg, 100%, 66%);
+  color: hsl(0, 100%, 66%);
   font-size: 11px;
   margin: -17px 0 7px;
 }
@@ -182,7 +182,7 @@
   text-align: center;
 }
 .thanks-text {
-  color: hsl(279deg, 6%, 55%);
+  color: hsl(279, 6%, 55%);
   text-align: center;
 }
 .thanks-button {
@@ -192,7 +192,7 @@
   font-size: 17px;
   font-family: "Space Grotesk", sans-serif;
   color: white;
-  background-color: hsl(278deg, 68%, 11%);
+  background-color: hsl(278, 68%, 11%);
   border: none;
   margin-top: 50px;
   cursor: pointer;
@@ -212,7 +212,7 @@
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 * {
@@ -227,9 +227,12 @@ body {
 }
 
 .main-container {
-  border: 1px solid red;
+  border: 1px solid rgb(203, 203, 203);
   width: 375px;
+  height: 97vh;
   margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 @media (min-width: 1320px) {
   .main-container {
